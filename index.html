@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rijan Koirala - Game Developer</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/Logo.png" alt="logo image" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Game|Web Developer</p>
+                <h1>
+                    Namaste, I'm <span>Rijan</span> <br />
+                     From Nepal
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/pfppp2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my corner of the web! I'm Rijan Koirala, a passionate Game Developer and Web Develope with a love for Development and Creation. 
+                        With more than 3 years of experience in Development and Artwork, I thrive on creating impactful solutions and
+                         sharing knowledge with my community. When I'm not Developer, you can find me as a B0000ring Person. Let's connect
+                          and make something amazing together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>3D Modeling</span><br>Designing 3D Models and Assets</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>Game Development</span><br>Building Android/PC games</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Game Developer</li>
+                            <li><span>2021 - 2023</span><br>3D artist</li>
+                            <li><span>2021 - 2023</span><br>Freelancer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Start-2021</span><br>Middle School, Everest Secondary School</li>
+                            <li><span>2021-2023</span><br>High School, Everest Secondary School</li>
+                            <li><span>2023-Present</span><br>BTech., ASPIRE,KU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>We create dynamic, responsive, and user-friendly websites tailored to your business needs, leveraging the latest technologies and best practices.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>3D Modeling</h2>
+                    <p>We specialize in creating high-quality 3D models for games, virtual reality, simulations, and more, providing detailed and realistic assets that enhance your projects.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Game Development</h2>
+                    <p>Our game development services encompass the full cycle from concept to launch, ensuring immersive gameplay, engaging mechanics, and stunning visuals across various platforms.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works section -->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="img/happytails.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Pet Adoption App</h3>
+                        <p>A web project that is created using Django. This website consist of various features like auth login/register, search algorithm, contact section etc. A complete website that can also be modified into other required website eg - eCommerce</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/Fallout.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Video Game</h3>
+                        <p>A Unity 3d project which uses C# as programming language, Consists of 2 level within the island, containing features like barrel burst, 3 weapons animaed hands and gun with working mini map.</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/Pymouse.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Finger Mouse App</h3>
+                        <p>A python script app that uses finger key point to calculate the location of the finger within the camera area which is later translated and fed in the cursor location which can controll the cursor withour touching the device</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/model.png" alt="work-3">
+                    <div class="layer">
+                        <h3>3d Model</h3>
+                        <p>A 3d modell of the Nepali sculpture, located at Hanuman dhoka, Kathmandu, Created in Blender.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/rijan0" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rijankoirala27@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+977 982 937 7060</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/rijan0"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/rizzan_n_n?igsh=bjA1dDl1ZnVwZXBl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rijan-koirala-2282ab2a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/Rijan Koirala CV.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Rijan. Made with <i class="fa-solid fa-heart"></i> by <a href="#">Rijan</a></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
