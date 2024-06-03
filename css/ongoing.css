@@ -80,6 +80,24 @@ body {
     margin-bottom: 1rem;
 }
 
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+.copyright a{
+    text-decoration: none;
+    color: #fff;
+}
+.copyright a:hover{
+    color: #ff004f;
+}
 /* Responsive Styles */
 @media (max-width: 600px) {
     .navbar h1 {
