@@ -60,9 +60,10 @@ body {
 .qr-code {
     width: 200px;
     height: 200px;
-    margin-top: 1rem;
     border: 2px solid #ff004f;
     border-radius: 8px;
+    margin-top: 1rem;
+    object-fit: contain;
 }
 
 .donation h3 {
@@ -90,5 +91,7 @@ body {
 
     .reference-image, .qr-code {
         width: 100%;
+        max-width: 200px;
+        height: auto;
     }
 }
