@@ -63,14 +63,7 @@ body {
     text-align: center;
 }
 
-.qr-code {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #ff004f;
-    border-radius: 8px;
-    margin-top: 1rem;
-    object-fit: contain;
-}
+
 
 .donation h3 {
     color: #ff004f;
@@ -80,24 +73,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 5px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
-.copyright i{
-    color: #ff004f;
-}
-.copyright a{
-    text-decoration: none;
-    color: #fff;
-}
-.copyright a:hover{
-    color: #ff004f;
-}
 /* Responsive Styles */
 @media (max-width: 600px) {
     .navbar h1 {
@@ -120,11 +95,5 @@ body {
     .donation {
         max-width: 100%;
         padding: 0 1rem;
-    }
-
-    .qr-code {
-        width: 100%;
-        max-width: 200px;
-        height: auto;
     }
 }
