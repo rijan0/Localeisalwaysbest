@@ -91,7 +91,7 @@ body {
 
     .reference-image, .qr-code {
         width: 100%;
-        max-width: 200px;
+        max-width: 100px;
         height: auto;
     }
 }
