@@ -89,7 +89,7 @@ body {
         font-size: 1.2rem;
     }
 
-    .reference-image, .qr-code {
+    .reference-image, .qr-code{
         width: 100%;
         max-width: 100%;
         height: 100%;
