@@ -42,8 +42,55 @@ body {
     font-weight: bold;
     transform: translate(30px, 30px);
 }
+.container h1 {
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    font-weight: bold;
+    padding-top: 200px;
+}
+.container h2 {
+    color:#ADFF2F;
+    font-size: 9rem;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(50, 205, 50, 0.6);
+}
+.container p{
+    font-family: cursive;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+button {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    background-color: #32CD32;
+    border: none;
+    border-radius: 50px; /* Fully rounded */
+    cursor: pointer;
+    width: 60px; /* Small width initially */
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 0 10px rgba(50, 205, 50, 0.7);
+}
 
+button:hover {
+    width: 180px; /* Expand on hover */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(50, 205, 50, 1), 
+    0 0 40px rgba(50, 205, 50, 0.4), 
+    0 0 60px rgba(50, 205, 50, 0.2);
+}
 
+button::after {
+    content: "CV";
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover::after {
+    content: "Download CV";
+}
 .navbar {
     margin-left: auto; 
 }
