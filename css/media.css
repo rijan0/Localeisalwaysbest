@@ -8,8 +8,6 @@
 body {
     background-color: #121212; /* Dark background */
     color: white;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 /* Header */
@@ -21,7 +19,6 @@ body {
     position: relative;
 }
 
-/* Logo */
 .logo {
     background: linear-gradient(45deg, #32CD32, #ADFF2F); 
     width: 300px;
@@ -63,7 +60,6 @@ body {
     color: black;
 }
 
-/* Container (for future content) */
 .container {
     padding: 50px;
     min-height: 89vh;

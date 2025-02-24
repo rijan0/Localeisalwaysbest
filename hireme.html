@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireMe</title>
+    <link rel="stylesheet" href="css/hireme.css">
+    <script defer src="Javascript/index.js"></script> 
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>RK</h1>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div> 
+        <div class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="hireme.html" style="background: #32CD32;
+    color: black;">HireMe</a>
+            <a href="media.html">Media</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you're interested in working with me or have any questions, feel free to reach out!</p>
+
+        <!-- Contact Form -->
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="copyright">© 2025 RK. All rights reserved.</div>
+        <div class="email">rijankoirala26@gmail.com</div>
+    </div>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS (with your user ID)
+(function() {
+    emailjs.init("qOCLEp64oC5Zl84As");
+})();
+
+// Handle form submission
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form field values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Prepare data to send to the template
+    const templateParams = {
+        user_name: name,
+        user_email: email,
+        message: message
+    };
+
+    // Send the email using the template
+    emailjs.send("service_z5h7lhb", "template_wpxlrbg", templateParams)
+    .then(function(response) {
+        console.log("SUCCESS", response);
+        alert("Thank you for your message! I will get back to you soon.");
+        document.getElementById("contact-form").reset();
+    }, function(error) {
+        console.log("FAILED", error);
+        alert("Oops! Something went wrong. Error: " + error.text);
+    });
+});
+
+    </script>
+</body>
+</html>
