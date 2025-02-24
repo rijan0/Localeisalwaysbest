@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HireMe</title>
     <link rel="stylesheet" href="css/hireme.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> <!-- EmailJS CDN -->
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> 
 </head>
 <body>
     <div class="header">
@@ -60,6 +61,11 @@
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
             const message = document.getElementById("message").value;
+
+            console.log("Form submitted!");
+            console.log("Name:", name);
+            console.log("Email:", email);
+            console.log("Message:", message);
 
             const templateParams = {
                 user_name: name,
