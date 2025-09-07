@@ -7,19 +7,19 @@
     <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> 
     <script defer src="Javascript/index.js"></script> 
-    <link rel="stylesheet" href="css/hireme.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            <h1>RK</h1>
+            <img src="assets/LOGOp.png" alt="My Logo">
         </div>
         <div class="menu-icon" id="menu-icon">&#9776;</div>
         <div class="navbar" id="navbar">
             <a href="index.html">Home</a>
-            <a href="Projects.html">Projects</a>
-            <a href="Media.html">Media</a>
-            <a href="ContactMe.html" style="background: #32CD32; color: black;">ContactMe</a>
+            <a href="Downloads.html">Downloads</a>
+            <!--<a href="Media.html">Media</a> -->
+            <a href="ContactMe.html" class="active">ContactMe</a>
         </div>
     </div>
 
@@ -51,40 +51,35 @@
     </div>
 
     <script type="text/javascript">
-        // Initialize EmailJS with your public key
-        emailjs.init("qOCLEp64oC5Zl84As");  // Replace with your actual public key
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initialize EmailJS
+            emailjs.init("qOCLEp64oC5Zl84As");  // Replace with your actual public key
 
-        // Add event listener to the contact form
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
+            const form = document.getElementById("contact-form");
 
-            // Collect form data
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
 
-            console.log("Form submitted!");
-            console.log("Name:", name);
-            console.log("Email:", email);
-            console.log("Message:", message);
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
 
-            const templateParams = {
-                user_name: name,
-                user_email: email,
-                message: message
-            };
+                const templateParams = {
+                    user_name: name,
+                    user_email: email,
+                    message: message
+                };
 
-            // Send email using EmailJS
-            emailjs.send("service_z5h7lhb", "template_wpxlrbg", templateParams)
-                .then(function(response) {
-                    console.log("SUCCESS", response);
-                    alert("Thank you for your message! I will get back to you soon.");
-                    document.getElementById("contact-form").reset();  // Reset form
-                }, function(error) {
-                    console.log("FAILED", error);
-                    alert("Oops! Something went wrong. Error: " + error.text);
-                });
+                emailjs.send("service_z5h7lhb", "template_wpxlrbg", templateParams)
+                    .then(function(response) {
+                        alert("Thank you for your message! I will get back to you soon.");
+                        form.reset();
+                    }, function(error) {
+                        alert("Oops! Something went wrong. Error: " + error.text);
+                    });
+            });
         });
+        
     </script>
 </body>
 </html>
