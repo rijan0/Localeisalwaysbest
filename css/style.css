@@ -297,6 +297,18 @@ input:focus, textarea:focus {
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
     }
+    .download button {
+        width: 100%;       /* Full width inside container */
+        max-width: 300px;  /* Optional: limit max size */
+        padding: 15px 0;   /* Adjust vertical padding */
+        font-size: 1.1rem; /* Slightly bigger text */
+    }
+    .platform-logo {
+    width: 22px;       /* smaller icon for mobile */
+    height: 20px;
+    padding-right: 7px;
+    padding-top: 5px;
+  }
 
     .navbar.active {
         display: flex;
