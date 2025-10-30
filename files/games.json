@@ -9,10 +9,10 @@
   },
   {
     "Name": "FREE THEM",
-    "Description": "Explore the galaxy and discover new planets!",
-    "ExeName": "SpaceExplorer.exe",
+    "Description": "Explore the horror map with different levels!",
+    "ExeName": "FREE Them.exe",
     "ImagePath": "images/space.png",
-    "DownloadUrl": "https://rijankoirala.com.np/games/SpaceExplorer.zip",
+    "DownloadUrl": "https://rijankoirala.com.np/games/FREETHEM.zip",
     "Status": "Upcoming"
   }
 ]
