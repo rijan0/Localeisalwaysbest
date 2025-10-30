@@ -1,16 +1,18 @@
 [
   {
-    "Name": "Zombie Apocalypse Survival",
+    "Name": "Zombie Apocalypse Survival - TEST",
     "Description": "Survive waves of zombies in this thrilling game!",
     "ExeName": "Zombie Apocalypse Survival.exe",
     "ImagePath": "images/zombie.png",
-    "DownloadUrl": "https://rijankoirala.com.np/games/ZombieApocalypseSurvival.zip"
+    "DownloadUrl": "https://rijankoirala.com.np/games/ZombieApocalypseSurvival.zip",
+    "Status": "Available"
   },
   {
-    "Name": "Space Explorer",
+    "Name": "FREE THEM",
     "Description": "Explore the galaxy and discover new planets!",
     "ExeName": "SpaceExplorer.exe",
     "ImagePath": "images/space.png",
-    "DownloadUrl": "https://rijankoirala.com.np/games/SpaceExplorer.zip"
+    "DownloadUrl": "https://rijankoirala.com.np/games/SpaceExplorer.zip",
+    "Status": "Upcoming"
   }
 ]
